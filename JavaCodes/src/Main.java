@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -34,17 +31,29 @@ public class Main {
         list.add(e4);
         list.add(e5);
 
+        System.out.println("Employee with Department HR Names : \n");
+        list.stream().filter(employee -> employee.getDepratment().equals("HR")).map(Employee::getEmpName).forEach(System.out::println);
+
+        System.out.println("----------------");
+
         List<Employee> filtered = list.stream().filter
                 (employeeList -> employeeList.empAge >20 && employeeList.depratment.equals("HR")).collect(Collectors.toList());
             System.out.println(filtered);
-            System.out.println("\n");
+        System.out.println("----------------");
+
+        list.stream().filter
+                (employeeList -> employeeList.empAge >20 && employeeList.depratment.equals("HR")).
+                map(Employee::getEmpName).
+                forEach(System.out::println);
+
+        System.out.println("----------------");
+
 
             Map<String, Long> map =
                     list.stream().collect(Collectors.groupingBy(Employee::getDepratment,Collectors.counting()));
         System.out.println(map);
 
-        String s = "Profile GGGGG deletedsuccess";
-        System.out.println(s.contains("eleted success"));
+        
 
 
 
