@@ -19,7 +19,7 @@ public class Main {
         thread1.start();*/
 
         Employee e1 = new Employee(101, Constants.AMEX, 31, 220000, "Technical");
-        Employee e2 = new Employee(102, "Tiya", 23, 180000, "IT");
+        Employee e2 = new Employee(102, Constants.AMEX2, 23, 180000, "IT");
         Employee e3 = new Employee(103, "Advait", 31, 220000, "IT");
         Employee e4 = new Employee(104, "Akash", 61, 290000, "HR");
         Employee e5 = new Employee(105, "ALISHA", 15, 340000, "HR");
