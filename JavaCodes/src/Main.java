@@ -18,7 +18,7 @@ public class Main {
         Thread thread1 = new Thread(myThreadRunnable);
         thread1.start();*/
 
-        Employee e1 = new Employee(101, "Arpit", 31, 220000, "Technical");
+        Employee e1 = new Employee(101, "Arpit1", 31, 220000, "Technical");
         Employee e2 = new Employee(102, "Tiya", 23, 180000, "IT");
         Employee e3 = new Employee(103, "Advait", 31, 220000, "IT");
         Employee e4 = new Employee(104, "Akash", 61, 290000, "HR");
