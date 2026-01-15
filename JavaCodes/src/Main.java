@@ -22,7 +22,7 @@ public class Main {
         Employee e2 = new Employee(102, "Tiya", 23, 180000, "IT");
         Employee e3 = new Employee(103, "Advait", 31, 220000, "IT");
         Employee e4 = new Employee(104, "Akash", 61, 290000, "HR");
-        Employee e5 = new Employee(105, "ALISHA", 15, 340000, "HR");
+        Employee e5 = new Employee(105, "MADHAV", 15, 340000, "HR");
 
         List<Employee> list = new ArrayList<>();
         list.add(e1);
